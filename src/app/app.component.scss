@@ -1,0 +1,30 @@
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes the full height of the viewport */
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.header {
+  background-color: #013d52;
+  color: white;
+  padding: 10px 0;
+  flex-shrink: 0; /* Ensure the footer does not shrink */
+  height: 50px; /* Fixed height for the footer */
+}
+
+.main-container {
+  padding: 3em;
+  flex-grow: 1; /* Make the main container take up the remaining space */
+}
+
+.footer {
+  background-color: #013d52;
+  color: white;
+  padding: 10px 0;
+  flex-shrink: 0; /* Ensure the footer does not shrink */
+  height: 50px; /* Fixed height for the footer */
+}

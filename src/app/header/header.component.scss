@@ -1,0 +1,90 @@
+.company-title {
+  padding-left: 0.5em;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+.home-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+.header-icon {
+  height: 3em;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 3em;
+  padding: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 550;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30%;
+    padding: .5rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .nav-links a {
+    background-color: transparent;
+  }
+
+  .hamburger {
+    align-self: flex-end;
+    display: block;
+  }
+}
+
+@media (max-width: 1080px) {
+  .company-title {
+    display: none;
+  }
+}

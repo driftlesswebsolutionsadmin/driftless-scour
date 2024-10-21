@@ -1,10 +1,17 @@
-<nav class="header">
-  <div class="logo">Driftless Scour</div>
-  <ul class="nav-links">
-    <li>Product</li>
-    <li>Features</li>
-    <li>Pricing</li>
-    <li>Contact</li>
-    <li>HEC-RAS</li>
+<nav class="navbar">
+  <div class="logo">
+    <a class="home-link" routerLink="/" routerLinkActive="router-link-active">
+      <img class="header-icon" src="/images/logo.png" />
+      <span class="company-title">Driftless Scour</span>
+    </a>
+  </div>
+  <ul class="nav-links" [class.active]="menuActive">
+    <li><a class="page-links" (click)="onLinkClick()" routerLink="/product" routerLinkActive="router-link-active">Product</a></li>
+    <li><a class="page-links" (click)="onLinkClick()" routerLink="/pricing" routerLinkActive="router-link-active">Pricing</a></li>
+    <li><a class="page-links" (click)="onLinkClick()" routerLink="/demo" routerLinkActive="router-link-active">Demo</a></li>
+    <li><a class="page-links" (click)="onLinkClick()" routerLink="/contact" routerLinkActive="router-link-active">Contact</a></li>
   </ul>
+  <div class="hamburger" (click)="toggleMenu()">
+    &#9776;
+  </div>
 </nav>

@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from './header/header.component';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
-import { MainComponent } from './main/main.component';
-import { FeaturesComponent } from './features/features.component';
-
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MainComponent, FooterComponent, HeaderComponent, FeaturesComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  imports: [
+    RouterOutlet,
+    HeaderComponent,
+    FooterComponent
+  ],
 })
-export class AppComponent {
-  title = 'driftless-scour';
-}
+export class AppComponent { }
