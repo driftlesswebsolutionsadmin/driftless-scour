@@ -1,0 +1,71 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes the full height of the viewport */
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.header {
+  background-color: #013d52;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.main-section {
+  background-image: url('/assets/images/bridge.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  color: white;
+  padding: 50px 0;
+  flex-grow: 1; /* Make the main section take up the remaining space */
+
+  .bridge-image {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    button {
+      background-color: #01789b;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.footer {
+  background-color: #013d52;
+  color: white;
+  padding: 10px 0;
+}
